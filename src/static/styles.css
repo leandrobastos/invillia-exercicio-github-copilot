@@ -79,6 +79,8 @@ section h3 {
   padding-left: 0;
   list-style-type: none;
   color: #555;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }
 
 .activity-card ul li {
@@ -87,12 +89,23 @@ section h3 {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 5px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.activity-card ul li:last-child {
+  border-bottom: none;
 }
 
 .activity-card ul li::before {
-  content: "✔️";
-  color: #2e7d32;
+  content: "👤";
+  color: #1a237e;
   font-size: 16px;
+}
+
+.activity-card ul li span {
+  font-weight: bold;
+  color: #333;
 }
 
 .form-group {
